@@ -15,6 +15,7 @@ services:
       - 3001:3001
     environment:
       DB_URL: mongodb://db/vidly
+      REACT_APP_API_URL: http://64.23.157.92:3001/api
     # command: ["sh", "docker-entrypoint.sh"]
     command: ./docker-entrypoint.sh
     restart: unless-stopped
